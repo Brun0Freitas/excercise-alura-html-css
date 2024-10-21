@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-background: #000000; 
+    --cor2: #f6f6f6;
+    --cor3: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-princ: 'Krona One', sans-serif;
+    --fonte-sec: 'Monteserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 2% 0 0 15%;
+}
+
+header nav{
+    display: flex;
+    gap: 80px;
+}
+
+header a{
+    font-family: var(--fonte-sec);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-background);
+    color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main section{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main section h1{
+    font-size: 36px;
+    font-family: var(--fonte-princ);
+}
+
+.titulo-destaque{
+    color: var(--cor3);
+}
+
+main p{
+    font-size: 24px;
+    font-family: var(--fonte-sec);
+}
+
+.apresentacao-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao-links h2{
+    font-family: var(--fonte-princ);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.apresentacao-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 378px;
+    text-align: center;
+    border: 2px solid var(--cor3);
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor2);
+    font-family: var(--fonte-sec);
+}
+
+.apresentacao-links a:hover{
+    background-color: var(--cor-hover);
+}
+
+footer{
+    color: var(--cor-background);
+    background-color: var(--cor3);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-sec);
+    font-size: 14px;
+    font-weight: 400;
+}
